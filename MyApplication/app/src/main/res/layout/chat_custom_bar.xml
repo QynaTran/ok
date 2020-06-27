@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/custom_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DisplayName"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/custom_bar_image"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/custom_bar_seen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="27dp"
+        android:layout_toEndOf="@+id/custom_bar_image"
+        android:text="Last seen"
+        android:textColor="#fff"
+        android:textSize="12sp" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/custom_bar_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/icon_profile"/>
+
+
+    <ImageView
+        android:id="@+id/custom_bar_video"
+        style="@style/Widget.AppCompat.ActionButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_videocam_black_24dp" />
+
+</RelativeLayout>
